@@ -10,7 +10,7 @@ RUN curl --silent --show-error --retry 5 https://bootstrap.pypa.io/get-pip.py | 
 RUN mkdir -p /var/www/crysadm \
         && mkdir -p /var/log/uwsgi \
         && cd /var/www \
-        && git clone https://github.com/HuiMi24/crysadm.git \
+        && git clone https://github.com/chao-luo/crysadm.git \
         && cd crysadm \
         && mv /etc/nginx/sites-enabled/default . \
         && ln -s /var/www/crysadm/crysadm_nginx.conf /etc/nginx/conf.d/ \
